@@ -1412,7 +1412,7 @@ input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 150px;
+    width: 100px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     border-radius: 25px;
@@ -1777,7 +1777,7 @@ input::-moz-focus-inner {
 .home-content__buttons .btn {
     width: 215px;
     border-color: #FFFFFF;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
