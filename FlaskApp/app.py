@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request,flash
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -11,12 +11,5 @@ def home():
 def dashboard():
     return render_template('dashboard.html')
 
-
-
-
-# print("BEFORE")
-
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='5000')
-
-# print("AFTER")
