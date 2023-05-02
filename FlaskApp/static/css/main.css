@@ -75,7 +75,7 @@ body {
 }
 
 body {
-    background: #111111;
+    background: #2A2B2B;
     font-family: "lora-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
@@ -99,7 +99,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 a:hover,
@@ -125,7 +125,7 @@ h6,
 .h5,
 .h6 {
     font-family: "montserrat-medium", sans-serif;
-    color: #000000;
+    color: #2A2B2B;
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -231,7 +231,7 @@ p.lead {
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 3.6rem;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 @media only screen and (max-width: 800px) {
@@ -288,7 +288,7 @@ blockquote p {
     padding: 0;
     font-size: 2.1rem;
     line-height: 1.857;
-    color: #111111;
+    color: #2A2B2B;
 }
 
 blockquote cite {
@@ -360,7 +360,7 @@ abbr[title] {
 
 mark {
     background: #ffd900;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 hr {
@@ -416,7 +416,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #39b54a;
+    background: #00D1EC;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -425,7 +425,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 dd {
@@ -481,7 +481,7 @@ td {
 }
 
 th {
-    color: #000000;
+    color: #2A2B2B;
     font-family: "montserrat-bold", sans-serif;
 }
 
@@ -550,7 +550,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #39b54a;
+    background: #00D1EC;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -593,7 +593,7 @@ form,
 }
 
 .line-scale-pulse-out>div {
-    background-color: #39b54a;
+    background-color: #00D1EC;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -734,7 +734,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    color: #000000;
+    color: #2A2B2B;
     border-bottom: 2px solid black;
 }
 
@@ -745,7 +745,7 @@ legend {
     font-weight: bold;
     margin-bottom: .9rem;
     line-height: 1.714;
-    color: #000000;
+    color: #2A2B2B;
     display: block;
 }
 
@@ -789,7 +789,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #39b54a;
+    -webkit-text-fill-color: #00D1EC;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -812,7 +812,7 @@ input[type="button"] {
     line-height: calc(5.4rem - .4rem);
     padding: 0 3rem;
     margin: 0 .3rem 1.2rem 0;
-    color: #000000;
+    color: #2A2B2B;
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
@@ -835,7 +835,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
     background-color: #b8b8b8;
     border-color: #b8b8b8;
-    color: #000000;
+    color: #2A2B2B;
     outline: 0;
 }
 
@@ -847,8 +847,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #39b54a;
-    border-color: #39b54a;
+    background: #00D1EC;
+    border-color: #00D1EC;
     color: #FFFFFF;
 }
 
@@ -878,14 +878,14 @@ button.full-width {
 .btn--stroke,
 button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #39b54a;
-    color: #39b54a;
+    border: 0.2rem solid #00D1EC;
+    color: #00D1EC;
 }
 
 .btn--stroke:hover,
 button.btn--stroke:hover {
-    border: 0.2rem solid #000000;
-    color: #000000;
+    border: 0.2rem solid #2A2B2B;
+    color: #2A2B2B;
 }
 
 button::-moz-focus-inner,
@@ -961,7 +961,7 @@ input::-moz-focus-inner {
     line-height: 6rem;
     text-indent: 0;
     background: transparent;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 /* line definition style 
@@ -1054,11 +1054,11 @@ input::-moz-focus-inner {
     font-family: "montserrat-regular", sans-serif;
     font-weight: bold;
     border: none;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 .stats-tabs li a:hover {
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 .stats-tabs li a em {
@@ -1092,7 +1092,7 @@ input::-moz-focus-inner {
     left: 0;
     top: -3rem;
     font-family: "montserrat-bold", sans-serif;
-    color: #000000;
+    color: #2A2B2B;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 1.4rem;
@@ -1100,7 +1100,7 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .progress {
-    background: #000000;
+    background: #2A2B2B;
     position: relative;
     height: 100%;
 }
@@ -1114,7 +1114,7 @@ input::-moz-focus-inner {
     color: #FFFFFF;
     font-size: 1.1rem;
     line-height: 1;
-    background: #000000;
+    background: #2A2B2B;
     padding: .6rem .6rem;
     border-radius: 3px;
 }
@@ -1126,7 +1126,7 @@ input::-moz-focus-inner {
     margin-left: -5px;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
-    border-top: 5px solid #000000;
+    border-top: 5px solid #2A2B2B;
     content: "";
 }
 
@@ -1167,7 +1167,7 @@ input::-moz-focus-inner {
     font-family: "montserrat-medium", sans-serif;
     font-size: 7.8rem;
     line-height: 1.25;
-    color: #000000;
+    color: #2A2B2B;
     margin-top: 0;
 }
 
@@ -1179,7 +1179,7 @@ input::-moz-focus-inner {
     font-family: "montserrat-medium", sans-serif;
     font-size: 5.2rem;
     line-height: 1.255;
-    color: #000000;
+    color: #2A2B2B;
     margin-top: 0;
 }
 
@@ -1197,13 +1197,13 @@ input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #2c9ab8;
+    color: #00D1EC;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .subhead--dark {
-    color: #000000;
+    color: #2A2B2B;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1371,7 +1371,7 @@ input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #39b54a;
+    background: #00D1EC;
 }
 
 /* ===================================================================
@@ -1412,7 +1412,7 @@ input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 100px;
+    width: 180px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     border-radius: 25px;
@@ -1466,7 +1466,7 @@ input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #2c9ab8;
+    color: #00D1EC;
 }
 
 .header-nav p {
@@ -1604,17 +1604,17 @@ input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #2c9ab8;
+    color: #00D1EC;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .header-menu-toggle.opaque {
-    background-color: #000000;
+    background-color: #2A2B2B;
 }
 
 .header-menu-toggle.opaque .header-menu-text {
-    background-color: #000000;
+    background-color: #2A2B2B;
 }
 
 .header-menu-toggle:hover,
@@ -1713,7 +1713,7 @@ input::-moz-focus-inner {
     background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2A2B2B00', endColorstr='#cc2A2B2B', GradientType=0);
 }
 
 .s-home .overlay {
@@ -1723,11 +1723,11 @@ input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     opacity: .6;
-    background-color: #000000;
+    background-color: #2A2B2B;
 }
 
 .no-js .s-home {
-    background: #000000;
+    background: #2A2B2B;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1791,7 +1791,7 @@ input::-moz-focus-inner {
 .home-content__buttons .btn:hover,
 .home-content__buttons .btn:focus {
     background: #FFFFFF !important;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 .home-content__scroll {
@@ -1813,8 +1813,8 @@ input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #2c9ab8;
-    border-right: 2px solid #2c9ab8;
+    border-bottom: 2px solid #00D1EC;
+    border-right: 2px solid #00D1EC;
     content: '';
     display: block;
     height: 8px;
@@ -1838,7 +1838,7 @@ input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #2c9ab8;
+    background-color: #00D1EC;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -1899,7 +1899,7 @@ input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #39b54a;
+    color: #00D1EC;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2147,7 +2147,7 @@ html.cl-loaded .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #2c9ab8;
+    background-color: #00D1EC;
     color: #010507;
     position: relative;
 }
@@ -2198,7 +2198,7 @@ html.cl-loaded .home-content__main {
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
-    color: #000000;
+    color: #2A2B2B;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;
@@ -2351,7 +2351,7 @@ html.cl-loaded .home-content__main {
 
 .services-list .service-icon {
     float: left;
-    color: #39b54a;
+    color: #00D1EC;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2445,7 +2445,7 @@ html.cl-loaded .home-content__main {
 
 .s-works .intro-wrap {
     padding: 15rem 0 25.2rem;
-    background: #111111;
+    background: #2A2B2B;
 }
 
 .works-content {
@@ -2604,7 +2604,7 @@ html.cl-loaded .home-content__main {
 .item-folio__project-link:focus,
 .item-folio__project-link:active {
     background-color: #FFFFFF;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 /* on hover 
@@ -2763,7 +2763,7 @@ html.cl-loaded .home-content__main {
 
 .clients-testimonials .testimonials__name {
     font-family: "montserrat-semibold", sans-serif;
-    color: #000000;
+    color: #2A2B2B;
 }
 
 .clients-testimonials .testimonials__pos {
@@ -2920,7 +2920,7 @@ html.cl-loaded .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #39b54a;
+    background: #00D1EC;
 }
 
 .s-contact .form-field label::after {
@@ -2931,14 +2931,14 @@ html.cl-loaded .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #39b54a;
+    border-right: 5px solid #00D1EC;
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #2c9ab8;
+    background-color: #00D1EC;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -2965,7 +2965,7 @@ html.cl-loaded .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 .contact-content input[type="email"],
@@ -2992,7 +2992,7 @@ html.cl-loaded .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #39b54a;
+    border-bottom: 1px solid #00D1EC;
 }
 
 .contact-content button,
@@ -3088,7 +3088,7 @@ html.cl-loaded .home-content__main {
 
 .contact-social li a:hover,
 .contact-social li a:focus {
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 .contact-social li:last-child {
@@ -3098,7 +3098,7 @@ html.cl-loaded .home-content__main {
 .message-warning,
 .message-success {
     display: none;
-    background: #111111;
+    background: #2A2B2B;
     font-size: 1.5rem;
     line-height: 2;
     padding: 3rem;
@@ -3111,7 +3111,7 @@ html.cl-loaded .home-content__main {
 }
 
 .message-success {
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 .message-warning i,
@@ -3298,7 +3298,7 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
-    color: #39b54a;
+    color: #00D1EC;
 }
 
 footer .row {
@@ -3390,8 +3390,8 @@ footer .row {
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #39b54a;
-    border-color: #39b54a;
+    background: #00D1EC;
+    border-color: #00D1EC;
     padding: 0 20px;
 }
 
