@@ -12,7 +12,23 @@
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
         <input type="password" placeholder="Password">
-        <button>Register</button>
+
+        <!-- <button onclick="register.html">Register</button> -->
+
+        <!-- <form action="register.html">
+          <button type="submit">Register</button>
+       </form> -->
+
+       <!-- <button onclick="window.location.href = 'register.html';">Register</button> -->
+
+       <!-- <a href = "dashboard.html">
+        <button>
+        <span className="smoothscroll btn btn--stroke"> -->
+          <!-- View Dashboard -->
+          <!-- </span> -->
+        <!-- </button> -->
+      <!-- </a> --> 
+
         <span>or use your account</span>
         <div class="social-container">
           <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
@@ -23,11 +39,26 @@
     </div>
 
     <div class="form-container login-container">
-      <form action="#">
-        <h1>Login hire.</h1>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <div class="content">
+
+      <form action="{{ url_for('login') }}" method="post">
+        <h1>Login here.</h1>
+        <!-- <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password"> -->
+
+        <!-- CHANGE TO EMAIL OR KEEP AS USERNAME? -->
+        <label for="email">
+				</label>
+				<input type="text" name="email" placeholder="Email Address" id="username" required>
+				<label for="password">
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<div class="msg">{{ msg }}</div>
+
+        <!-- TODO: ADD BUTTON ATTRIBUTES TO SUBMIT BUTTON -->
+        <input type="submit" class = "submit" value="Login">
+
+
+        <!-- <div class="content">
           <div class="checkbox">
             <input type="checkbox" name="checkbox" id="checkbox">
             <label>Remember me</label>
@@ -35,15 +66,16 @@
           <div class="pass-link">
             <a href="#">Forgot password?</a>
           </div>
-        </div>
-        <button>Login</button>
-        <span>or use your account</span>
+        </div> -->
+        <!-- <button>Login</button> -->
+        <!-- <span>or use your account</span> -->
         <div class="social-container">
-          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <!-- <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
           <a href="#" class="social"><i class="lni lni-google"></i></a>
-          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a> -->
         </div>
       </form>
+
     </div>
 
     <div class="overlay-container">
@@ -56,11 +88,14 @@
           </button>
         </div>
         <div class="overlay-panel overlay-right">
-          <h1 class="title">Start yout <br> journy now</h1>
+          <h1 class="title">Start your <br> journey now</h1>
           <p>if you don't have an account yet, join us and start your journey.</p>
-          <button class="ghost" id="register">Register
-            <i class="lni lni-arrow-right register"></i>
-          </button>
+
+          <a href = "register.html">
+            <button class="ghost" id="register">Register
+              <i class="lni lni-arrow-right register"></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>

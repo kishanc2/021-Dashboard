@@ -69,7 +69,13 @@ a:hover {
   justify-content: center;
 }
 
-.content input {
+.content #username {
+  accent-color: #333;
+  width: 12px;
+  height: 12px;
+}
+
+.content #password {
   accent-color: #333;
   width: 12px;
   height: 12px;
@@ -79,6 +85,33 @@ a:hover {
   font-size: 14px;
   user-select: none;
   padding-left: 5px;
+}
+
+.submit {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #4bb6b7;
+  background-color: #4bb6b7;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 12px 80px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+  letter-spacing: 3px;
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+.submit:focus {
+  outline: none;
 }
 
 button {
@@ -149,7 +182,16 @@ form {
   text-align: center;
 }
 
-input {
+#username {
+  background-color: #eee;
+  border-radius: 10px;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+#password {
   background-color: #eee;
   border-radius: 10px;
   border: none;
