@@ -35,6 +35,10 @@ def incubator():
 def president():
     return render_template('president.html')
 
+@app.route('/vice_president.html', methods = ['GET', 'POST'])
+def vice_president():
+    return render_template('vice_president.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='5000')
 
