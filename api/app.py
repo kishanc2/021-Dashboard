@@ -59,6 +59,10 @@ def marketing_director():
 def contact():
     return render_template('contact.html')
 
+@app.route('/job_board.html', methods = ['GET', 'POST'])
+def job_board():
+    return render_template('job_board.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='5000')
 
