@@ -167,6 +167,9 @@
                 "complete" === a.readyState && t.readyCallback()
             })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)))
         }(window, document, window._wpemojiSettings);
+
+
+
     </script>
     <link rel="stylesheet" type="text/css" href="https://use.typekit.net/iuo4gmf.css">
     <style>
@@ -2466,6 +2469,10 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
     color: rgb(38 139 210/var(--tw-text-opacity))
 }
 
+a:hover {
+    color: rgb(8, 225, 241) !important
+}
+
 .ycdc-badge {
     --tw-bg-opacity: 1;
     align-items: center;
@@ -2548,12 +2555,12 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
 }
 
 .ycdc-btn:disabled,
-.ycdc-btn:hover {
+/* .ycdc-btn:hover {
     --tw-border-opacity: 1;
     --tw-bg-opacity: 1;
     background-color: rgb(186 62 3/var(--tw-bg-opacity));
     border-color: rgb(186 62 3/var(--tw-border-opacity))
-}
+} */
 
 .ycdc-btn-sm {
     border-width: 1px;
@@ -2681,14 +2688,14 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
     color: rgb(253 169 66/var(--tw-text-opacity))
 }
 
-.ycdc-btn-gold.ycdc-btn-outline:hover {
+/* .ycdc-btn-gold.ycdc-btn-outline:hover {
     --tw-border-opacity: 1;
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
     background-color: rgb(245 158 11/var(--tw-bg-opacity));
     border-color: rgb(245 158 11/var(--tw-border-opacity));
     color: rgb(255 255 255/var(--tw-text-opacity))
-}
+} */
 
 .ycdc-retro-btn {
     border: none;
@@ -4498,6 +4505,14 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
 .border-gray-800 {
     --tw-border-opacity: 1;
     border-color: rgb(31 41 55/var(--tw-border-opacity))
+}
+
+.border-blue-100 {
+    color: black
+}
+
+.border-blue-100:hover {
+    color: rgb(8, 225, 241) !important
 }
 
 .border-orange-300 {
@@ -6924,6 +6939,14 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
             transform: translateY(-50%)
         }
 
+        .rox{
+            display: none;
+        }
+
+        .show{
+            display: block;
+        }
+
         body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content {
             top: unset;
             right: 0;
@@ -7100,6 +7123,49 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
         gtag("config", "G-5NH7ZRYK1N");
     </script>
 
+    <script>
+        window.onload = function () { filterObjects("all"); }
+        function filterObjects(c){
+            var x, i;
+            x = document.getElementsByClassName("rox");
+            
+            if(c == "all") c = "";
+
+            for(i = 0; i < x.length; i++){
+                removeClass(x[i], "show");
+                if(x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+            }
+        }
+
+        function addClass(element, name){
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+
+            for(i = 0; i < arr2.length; i++){
+                if(arr1.indexOf(arr2[i]) == -1){
+                    element.className += " " + arr2[i];
+                }
+            }
+
+        }
+
+        function removeClass(element, name){
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+
+            for(i = 0; i < arr2.length; i++){
+                while(arr1.indexOf(arr2[i]) > -1){
+                    arr1.splice(arr1.indexOf(arr2[i]), 1); 
+                }
+            }
+
+            element.className = arr1.join(" ");
+        }
+
+    </script>
+
     <!-- End Google Analytics snippet added by Site Kit -->
     <script id='ecs_ajax_load-js-extra'>
         var ecs_ajax_params = {
@@ -7127,8 +7193,8 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
     </script>
     <!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
     <meta name="generator" content="Elementor 3.14.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-    <link rel="icon" href="https://www.trlm.com/wp-content/uploads/2023/06/cropped-favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://www.trlm.com/wp-content/uploads/2023/06/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="icon" href="../static/img/zero_2_one_logo_favicon.png" sizes="32x32" />
+    <link rel="icon" href="../static/img/zero_2_one_logo_favicon.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="https://www.trlm.com/wp-content/uploads/2023/06/cropped-favicon-180x180.png" />
     <meta name="msapplication-TileImage" content="https://www.trlm.com/wp-content/uploads/2023/06/cropped-favicon-270x270.png" />
     <style id="wp-custom-css">
@@ -7372,29 +7438,49 @@ tfoot td:last-child):not(:where([class~=not-prose] *)) {
                         <section class="relative isolate z-0 border-retro-sectionBorder sm:pr-[13px] ycdcPlus:pr-0 border-b pt-6 lg:pt-9 pb-6 lg:pb-9">
                             <div class="flex flex-col justify-between leading-loose md:flex-row">
                                 <h2 class="text-2xl text-center md:text-left">Zero2One Portfolio Jobs</h2>
-                                <ul class="text-center text-linkColor md:text-left">
-                                    <li class="inline border-r border-gray-300 px-2 last-of-type:border-none"><a href="/jobs/role/designer">Full Time</a></li>
-                                    <li class="inline border-r border-gray-300 px-2 last-of-type:border-none"><a href="/jobs/role/product-manager">Internships</a></li>
-                                    <li class="inline border-r border-gray-300 px-2 last-of-type:border-none"><a href="/jobs/role/designer">Software Development</a></li>
-                                    <li class="inline border-r border-gray-300 px-2 last-of-type:border-none"><a href="/jobs/role/product-manager">Product</a></li>
-                                    <li class="inline border-r border-gray-300 px-2 last-of-type:border-none"><a href="/jobs/role/recruiting-hr">Business Development</a></li>
-                                </ul>
                             </div>
                             <div class="mt-4 lg:mt-6">
+                                <ul class="text-center text-linkColor md:text-left">
+                                    <div id="filters">
+                                    <button class="inline border-r border-gray-300 px-2 last-of-type:border-none" onclick="filterObjects('ftime')"><a>Full Time</a></button>
+                                    <button class="inline border-r border-gray-300 px-2 last-of-type:border-none" onclick="filterObjects('intern')"><a>Internships</a></button>
+                                    <button class="inline border-r border-gray-300 px-2 last-of-type:border-none" onclick="filterObjects('sdev')"><a>Software Development</a></li>
+                                    <button class="inline border-r border-gray-300 px-2 last-of-type:border-none" onclick="filterObjects('product')"><a">Product</a></li>
+                                    <button class="inline border-r border-gray-300 px-2 last-of-type:border-none" onclick="filterObjects('bdev')"><a">Business Development</a></li>
+                                    </div>
+                                </ul>
                                 <ul class="space-y-2 overflow-hidden">
                                     <li class="my-2 flex h-auto w-full flex-col flex-nowrap rounded border border-[#ccc] bg-beige-lighter py-3 px-5">
                                         <div class="mb-1 flex flex-col flex-nowrap items-center justify-between gap-y-2 md:flex-row md:gap-y-0"><a href="index.html" class="shrink-0 md:mr-5"><img class="h-16 w-16 rounded-full" src="..\static\img\green_remedy_logo.png" alt=""/></a>
                                             <div class="flex-1 text-center md:text-left"><a class="justify-start leading-loose" href="index.html"><span class="block font-bold md:inline">Green Remedy<!-- --> (S24)</span><span class="hidden text-gray-500 md:inline"> • </span><span class="text-gray-700 md:mr-2">App focused on centralizing financial literacy</span><span class="hidden text-sm text-gray-400 md:inline"></span></a>
                                                 <div><a href="index.html" class="font-semibold text-linkColor">Software Engineer</a></div>
+
                                                 <div class="flex flex-row flex-wrap justify-center md:justify-start">
                                                     <div class="border-r border-gray-300 px-2 first-of-type:pl-0 last-of-type:border-none last-of-type:pr-0">Internship</div>
                                                     <div class="border-r border-gray-300 px-2 first-of-type:pl-0 last-of-type:border-none last-of-type:pr-0">Champaign, IL</div>
                                                     <div class="border-r border-gray-300 px-2 first-of-type:pl-0 last-of-type:border-none last-of-type:pr-0">Full Stack</div>
                                                 </div>
                                             </div>
-                                            <div class="mt-3 shrink-0 grow-0 md:mt-0 md:ml-5"><a href="index.html" target="_blank"
-                                                    class="ycdc-btn ycdc-btn-sm border-brand-200 hover:bg-brand-600">Apply</a></div>
+                                            <div class="mt-3 shrink-0 grow-0 md:mt-0 md:ml-5"><a href="more_info.html" target="_blank"
+                                                    class="ycdc-btn ycdc-btn-sm border-brand-200">Apply</a></div>
                                         </div>
+                                        </div>
+
+                                        <div class ="rox sdev intern">
+                                        <div class="mb-1 flex flex-col flex-nowrap items-center justify-between gap-y-2 md:flex-row md:gap-y-0"><a href="index.html" class="shrink-0 md:mr-5"><img class="h-16 w-16 rounded-full" src="https://bookface-images.s3.amazonaws.com/small_logos/ad7658154dd1af4e3c35620787ed7dd818be40ed.png" alt=""/></a>
+                                            <div class="flex-1 text-center md:text-left"><a class="justify-start leading-loose" href="more_info.html"><span class="block font-bold md:inline">Green Remedy<!-- --> (S24)</span><span class="hidden text-gray-500 md:inline"> • </span><span class="text-gray-700 md:mr-2">App focused on centralizing financial literacy</span><span class="hidden text-sm text-gray-400 md:inline"></span></a>
+                                                <div><a href="more_info.html" class="font-semibold text-linkColor">Software Engineer</a></div>
+                                                <div class="flex flex-row flex-wrap justify-center md:justify-start">
+                                                    <div class="border-r border-gray-300 px-2 first-of-type:pl-0 last-of-type:border-none last-of-type:pr-0">Internship</div>
+                                                    <div class="border-r border-gray-300 px-2 first-of-type:pl-0 last-of-type:border-none last-of-type:pr-0">Champaign, IL</div>
+                                                    <div class="border-r border-gray-300 px-2 first-of-type:pl-0 last-of-type:border-none last-of-type:pr-0">Full Stack</div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 shrink-0 grow-0 md:mt-0 md:ml-5"><a href="more_info.html" target="_blank"
+                                                    class="ycdc-btn ycdc-btn-sm border-brand-200">Apply</a></div>
+                                        </div>
+                                        </div>
+                                    </li>
                                     <!--jobs section ends, for hover color change we need access to bg-brand-600-->
                                 </ul>
                             </div>

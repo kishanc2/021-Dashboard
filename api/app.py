@@ -63,6 +63,10 @@ def contact():
 def job_board():
     return render_template('job_board.html')
 
+@app.route('/more_info.html', methods = ['GET', 'POST'])
+def more_info():
+    return render_template('more_info.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='5000')
 
